@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Thư mời Lễ Tốt nghiệp 🎓",
     description: "Trân trọng kính mời bạn tham dự Lễ Tốt nghiệp",
-    images: ["/preview.jpg"],
+    images: ["/preview.png"],
   },
 };
 
