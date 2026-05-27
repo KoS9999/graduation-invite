@@ -133,7 +133,7 @@ export default function GraduationPage() {
               <div className="text-slate-700 text-[14px] md:text-lg leading-[1.8] md:leading-[1.9] font-light">
                 <p className="mb-4 px-2 md:px-0">
                   Bạn đến tham dự <span className="font-semibold text-blue-800 underline underline-offset-4 decoration-amber-500/30">Lễ Tốt Nghiệp</span> – dấu mốc ý nghĩa khép lại hành trình 4 năm học tập và trưởng thành tại
-                  <span className="font-bold text-[#00358E]"> HCMUTE</span>.
+                  <span className="font-bold text-[#00358E]"> Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM</span>.
                 </p>
 
                 <div className="relative py-2">
@@ -153,7 +153,7 @@ export default function GraduationPage() {
             {/* TÊN */}
             <div className="pt-2 md:pt-6">
               <p className="font-serif text-2xl md:text-4xl text-[#00358E] font-semibold tracking-wide">
-                Ngô Ngọc Thông
+                Nguyễn Ngọc Tuấn Anh
               </p>
               <div className="flex flex-col items-center gap-1 mt-4">
                 <div className="h-1.5 w-16 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full shadow-[0_2px_10px_rgba(245,158,11,0.3)]" />
@@ -274,7 +274,7 @@ whileHover={{
       </div>
       <div className="space-y-1">
         <p className="text-blue-200/60 font-bold text-[10px] uppercase tracking-widest">Địa điểm tổ chức</p>
-        <p className="text-2xl md:text-4xl font-medium">Khuôn viên HCMUTE</p>
+        <p className="text-2xl md:text-4xl font-medium">Khuôn viên Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM</p>
         <p className="text-[11px] md:text-base text-blue-100/70 font-medium line-clamp-1">01 Võ Văn Ngân, Thủ Đức, TP.HCM</p>
       </div>
     </div>
