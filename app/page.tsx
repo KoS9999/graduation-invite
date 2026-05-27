@@ -275,7 +275,7 @@ whileHover={{
       <div className="space-y-1">
         <p className="text-blue-200/60 font-bold text-[10px] uppercase tracking-widest">Địa điểm tổ chức</p>
         <p className="text-2xl md:text-4xl font-medium">Khuôn viên Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM</p>
-        <p className="text-[11px] md:text-base text-blue-100/70 font-medium line-clamp-1">01 Võ Văn Ngân, Thủ Đức, TP.HCM</p>
+        <p className="text-[11px] md:text-base text-blue-100/70 font-medium line-clamp-1">Khu phố 34, Phường Linh Xuân, Thành phố Hồ Chí Minh</p>
       </div>
     </div>
   </motion.div>
