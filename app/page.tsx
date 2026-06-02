@@ -112,14 +112,14 @@ function BinaryRail() {
 
 export default function GraduationPage() {
   return (
-    <main className="h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth bg-[#f8fdff] text-slate-900 no-scrollbar">
+    <main className="h-[100dvh] overflow-y-auto snap-y snap-mandatory scroll-smooth bg-[#f8fdff] text-slate-900 no-scrollbar">
       <GlobalRipple />
 
       <div className="fixed inset-0 z-20 pointer-events-none">
         <FallingDecorations />
       </div>
 
-      <section className="relative min-h-screen w-full flex items-center justify-center px-4 md:px-6 py-10 md:py-20 text-center snap-start overflow-hidden">
+      <section className="relative min-h-[100dvh] w-full flex items-center justify-center px-3 sm:px-4 md:px-6 py-6 sm:py-10 md:py-20 text-center snap-start overflow-hidden">
         <TechBackground />
         <BinaryRail />
 
@@ -128,18 +128,15 @@ export default function GraduationPage() {
           initial="hidden"
           whileInView="visible"
           viewport={{ amount: 0.1 }}
-          className="relative z-10 max-w-5xl w-full overflow-hidden rounded-[2rem] md:rounded-[2.8rem] border border-sky-200/80 bg-white/84 p-6 shadow-[0_35px_120px_rgba(14,116,144,0.18)] backdrop-blur-xl md:p-14"
+          className="relative z-10 max-w-5xl w-full overflow-hidden rounded-[2rem] md:rounded-[2.8rem] border border-sky-200/80 bg-white/84 p-4 sm:p-6 shadow-[0_35px_120px_rgba(14,116,144,0.18)] backdrop-blur-xl md:p-14"
         >
           <div className="absolute left-4 top-4 h-16 w-16 rounded-tl-2xl border-l-2 border-t-2 border-sky-400/60" />
           <div className="absolute right-4 top-4 h-16 w-16 rounded-tr-2xl border-r-2 border-t-2 border-emerald-400/60" />
           <div className="absolute bottom-4 left-4 h-16 w-16 rounded-bl-2xl border-b-2 border-l-2 border-emerald-400/60" />
           <div className="absolute bottom-4 right-4 h-16 w-16 rounded-br-2xl border-b-2 border-r-2 border-sky-400/60" />
 
-          <div className="relative z-20 space-y-6 md:space-y-8">
-            <div className="mx-auto inline-flex items-center gap-3 rounded-full border border-sky-200 bg-white/85 px-5 py-2 shadow-sm">
-              <TechIcon name="cap" className="h-5 w-5 text-emerald-600" />
-              <span className="font-serif text-xl font-bold text-[#075985] md:text-2xl">Nguyễn Ngọc Tuấn Anh</span>
-            </div>
+          <div className="relative z-20 space-y-4 sm:space-y-6 md:space-y-8">
+
 
             <div className="flex flex-wrap items-center justify-center gap-2">
               {["code", "chip", "server", "cloud", "terminal"].map((icon) => (
@@ -151,14 +148,8 @@ export default function GraduationPage() {
             </div>
 
             <div className="space-y-4">
-              <p className="font-mono text-xs font-bold uppercase tracking-[0.32em] text-emerald-700">
-                Cloud invite • Class of 2026
-              </p>
               <h1 className="font-serif text-4xl md:text-7xl font-black leading-tight text-[#082f49]">
                 Lễ Tốt Nghiệp
-                <span className="block bg-gradient-to-r from-sky-600 via-cyan-500 to-emerald-500 bg-clip-text text-transparent">
-                  IT Graduation
-                </span>
               </h1>
             </div>
 
@@ -167,7 +158,10 @@ export default function GraduationPage() {
               <TechIcon name="cloud" className="h-8 w-8 text-emerald-600" />
               <div className="h-px flex-1 bg-gradient-to-r from-transparent via-sky-300 to-transparent" />
             </div>
-
+            <div className="mx-auto inline-flex items-center gap-3 rounded-full border border-sky-200 bg-white/85 px-5 py-2 shadow-sm">
+              <TechIcon name="cap" className="h-5 w-5 text-emerald-600" />
+              <span className="font-serif text-xl font-bold text-[#075985] md:text-2xl">Nguyễn Ngọc Tuấn Anh</span>
+            </div>
             <div className="mx-auto max-w-2xl space-y-4 px-2">
               <p className="font-serif text-lg italic text-sky-800 md:text-2xl">
                 Trân trọng kính mời
@@ -176,12 +170,19 @@ export default function GraduationPage() {
               <div className="text-[14px] md:text-lg leading-[1.75] text-slate-700">
                 <p>
                   Bạn đến chung vui trong ngày tốt nghiệp tại
+                </p>
+                <p>
                   <span className="font-bold text-sky-800"> Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM</span>.
                 </p>
-
-                <div className="my-4 rounded-2xl border border-sky-100 bg-sky-50/85 p-4 font-mono text-left text-sm text-slate-700 shadow-inner">
-                  <p><span className="text-sky-700">deploy</span>(graduation.day);</p>
-                  <p><span className="text-emerald-700">status</span>: &quot;ready to celebrate&quot;;</p>
+                <div className="my-4 rounded-2xl border border-sky-100 bg-sky-50/85 p-4 font-mono text-left text-[13px] md:text-sm text-slate-700 shadow-inner overflow-x-auto">
+                  <p><span className="text-sky-700 font-bold">int</span> <span className="text-emerald-700 font-bold">main</span>() {'{'}</p>
+                  <p className="pl-4"><span className="text-sky-700 font-bold">bool</span> is_graduated = <span className="text-sky-700 font-bold">true</span>;</p>
+                  <p className="pl-4"><span className="text-sky-700 font-bold">if</span> (is_graduated) {'{'}</p>
+                  <p className="pl-8"><span className="text-sky-700">std::cout</span> &lt;&lt; <span className="text-emerald-700">&quot;&gt; Ready to celebrate 🎉\\n&quot;</span>;</p>
+                  <p className="pl-8"><span className="text-sky-700">std::cout</span> &lt;&lt; <span className="text-emerald-700">&quot;&gt; Contact: 0966 077 968\\n&quot;</span>;</p>
+                  <p className="pl-4">{'}'}</p>
+                  <p className="pl-4"><span className="text-sky-700 font-bold">return</span> <span className="text-emerald-700">0</span>;</p>
+                  <p>{'}'}</p>
                 </div>
 
                 <p>Sự hiện diện của bạn là niềm vui lớn trong khoảnh khắc đáng nhớ này.</p>
@@ -200,7 +201,7 @@ export default function GraduationPage() {
         </motion.div>
       </section>
 
-      <section className="min-h-screen w-full flex items-center justify-center px-4 md:px-6 py-10 md:py-16 snap-start relative overflow-hidden text-slate-900">
+      <section className="min-h-[100dvh] w-full flex items-center justify-center px-4 md:px-6 py-8 md:py-16 snap-start relative overflow-hidden text-slate-900">
         <TechBackground />
         <BinaryRail />
 
@@ -209,7 +210,7 @@ export default function GraduationPage() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.1 }}
-          className="relative z-10 max-w-5xl w-full space-y-7 md:space-y-10"
+          className="relative z-10 max-w-5xl w-full space-y-6 md:space-y-10"
         >
           <div className="text-center space-y-3">
             <p className="font-mono text-xs font-bold uppercase tracking-[0.28em] text-sky-700">
@@ -245,8 +246,8 @@ export default function GraduationPage() {
                 </div>
                 <div className="space-y-1">
                   <p className="font-mono text-[10px] font-bold uppercase tracking-widest text-emerald-700">Thời gian bắt đầu</p>
-                  <p className="text-3xl md:text-5xl font-black text-[#082f49]">11:00 AM</p>
-                  <p className="text-sm md:text-lg font-medium text-slate-600">Thứ Bảy, 24/01/2026</p>
+                  <p className="text-3xl md:text-5xl font-black text-[#082f49]">16:00</p>
+                  <p className="text-sm md:text-lg font-medium text-slate-600">Thứ ba, 09/06/2026</p>
                 </div>
               </div>
             </motion.div>
@@ -305,7 +306,7 @@ export default function GraduationPage() {
         </motion.div>
       </section>
 
-      <section className="h-screen w-full flex items-center justify-center px-6 snap-start relative overflow-hidden text-slate-900">
+      <section className="min-h-[100dvh] w-full flex items-center justify-center px-4 sm:px-6 snap-start relative overflow-hidden text-slate-900">
         <TechBackground />
         <BinaryRail />
 
@@ -314,7 +315,7 @@ export default function GraduationPage() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
-          className="max-w-4xl w-full text-center space-y-8 md:space-y-10 relative z-10"
+          className="max-w-4xl w-full text-center space-y-6 md:space-y-10 relative z-10"
         >
           <div className="mx-auto grid h-16 w-16 place-items-center rounded-2xl border border-sky-200 bg-white/85 text-emerald-600 shadow-[0_0_40px_rgba(14,165,233,0.18)]">
             <TechIcon name="chip" className="h-9 w-9" />
