@@ -112,14 +112,14 @@ function BinaryRail() {
 
 export default function GraduationPage() {
   return (
-    <main className="h-[150dvh] overflow-y-auto snap-y snap-mandatory scroll-smooth bg-[#f8fdff] text-slate-900 no-scrollbar">
+    <main className="h-[100dvh] overflow-y-auto snap-y snap-mandatory scroll-smooth bg-[#f8fdff] text-slate-900 no-scrollbar">
       <GlobalRipple />
 
       <div className="fixed inset-0 z-20 pointer-events-none">
         <FallingDecorations />
       </div>
 
-      <section className="relative min-h-[150dvh] w-full flex items-center justify-center px-3 sm:px-4 md:px-6 py-6 sm:py-10 md:py-20 text-center snap-start overflow-hidden">
+      <section className="relative min-h-[100dvh] w-full flex items-center justify-center px-3 sm:px-4 md:px-6 py-6 sm:py-10 md:py-20 text-center snap-start overflow-hidden">
         <TechBackground />
         <BinaryRail />
 
@@ -172,9 +172,9 @@ export default function GraduationPage() {
                   Bạn đến chung vui trong ngày tốt nghiệp tại
                 </p>
                 <p>
-                  <span className="font-bold text-sky-800"> Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM</span>.
+                  <span className="font-bold text-sky-800"> Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM</span>
                 </p>
-                <div className="my-4 rounded-2xl border border-sky-100 bg-sky-50/85 p-4 font-mono text-left text-[13px] md:text-sm text-slate-700 shadow-inner overflow-x-auto">
+                <div className="my-4 rounded-2xl border border-sky-100 bg-sky-50/85 p-4 font-mono text-left text-[12px] md:text-sm text-slate-700 shadow-inner overflow-x-auto">
                   <p><span className="text-sky-700 font-bold">int</span> <span className="text-emerald-700 font-bold">main</span>() {'{'}</p>
                   <p className="pl-4"><span className="text-sky-700 font-bold">bool</span> is_graduated = <span className="text-sky-700 font-bold">true</span>;</p>
                   <p className="pl-4"><span className="text-sky-700 font-bold">if</span> (is_graduated) {'{'}</p>
@@ -201,7 +201,7 @@ export default function GraduationPage() {
         </motion.div>
       </section>
 
-      <section className="min-h-[150dvh] w-full flex items-center justify-center px-4 md:px-6 py-8 md:py-16 snap-start relative overflow-hidden text-slate-900">
+      <section className="min-h-[100dvh] w-full flex items-center justify-center px-4 md:px-6 py-8 md:py-16 snap-start relative overflow-hidden text-slate-900">
         <TechBackground />
         <BinaryRail />
 
