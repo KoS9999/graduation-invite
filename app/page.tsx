@@ -112,14 +112,14 @@ function BinaryRail() {
 
 export default function GraduationPage() {
   return (
-    <main className="h-[100dvh] overflow-y-auto snap-y snap-mandatory scroll-smooth bg-[#f8fdff] text-slate-900 no-scrollbar">
+    <main className="h-[150dvh] overflow-y-auto snap-y snap-mandatory scroll-smooth bg-[#f8fdff] text-slate-900 no-scrollbar">
       <GlobalRipple />
 
       <div className="fixed inset-0 z-20 pointer-events-none">
         <FallingDecorations />
       </div>
 
-      <section className="relative min-h-[100dvh] w-full flex items-center justify-center px-3 sm:px-4 md:px-6 py-6 sm:py-10 md:py-20 text-center snap-start overflow-hidden">
+      <section className="relative min-h-[150dvh] w-full flex items-center justify-center px-3 sm:px-4 md:px-6 py-6 sm:py-10 md:py-20 text-center snap-start overflow-hidden">
         <TechBackground />
         <BinaryRail />
 
@@ -178,8 +178,8 @@ export default function GraduationPage() {
                   <p><span className="text-sky-700 font-bold">int</span> <span className="text-emerald-700 font-bold">main</span>() {'{'}</p>
                   <p className="pl-4"><span className="text-sky-700 font-bold">bool</span> is_graduated = <span className="text-sky-700 font-bold">true</span>;</p>
                   <p className="pl-4"><span className="text-sky-700 font-bold">if</span> (is_graduated) {'{'}</p>
-                  <p className="pl-8"><span className="text-sky-700">std::cout</span> &lt;&lt; <span className="text-emerald-700">&quot;&gt; Ready to celebrate 🎉\\n&quot;</span>;</p>
-                  <p className="pl-8"><span className="text-sky-700">std::cout</span> &lt;&lt; <span className="text-emerald-700">&quot;&gt; Contact: 0966 077 968\\n&quot;</span>;</p>
+                  <p className="pl-8"><span className="text-sky-700">std::cout</span> &lt;&lt; <span className="text-emerald-700">&quot;Ready to celebrate 🎉\\n&quot;</span>;</p>
+                  <p className="pl-8"><span className="text-sky-700">std::cout</span> &lt;&lt; <span className="text-emerald-700">&quot;Contact: 0966 077 968&quot;</span>;</p>
                   <p className="pl-4">{'}'}</p>
                   <p className="pl-4"><span className="text-sky-700 font-bold">return</span> <span className="text-emerald-700">0</span>;</p>
                   <p>{'}'}</p>
@@ -201,7 +201,7 @@ export default function GraduationPage() {
         </motion.div>
       </section>
 
-      <section className="min-h-[100dvh] w-full flex items-center justify-center px-4 md:px-6 py-8 md:py-16 snap-start relative overflow-hidden text-slate-900">
+      <section className="min-h-[150dvh] w-full flex items-center justify-center px-4 md:px-6 py-8 md:py-16 snap-start relative overflow-hidden text-slate-900">
         <TechBackground />
         <BinaryRail />
 
@@ -306,51 +306,6 @@ export default function GraduationPage() {
         </motion.div>
       </section>
 
-      <section className="min-h-[100dvh] w-full flex items-center justify-center px-4 sm:px-6 snap-start relative overflow-hidden text-slate-900">
-        <TechBackground />
-        <BinaryRail />
-
-        <motion.div
-          variants={sectionVariant}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
-          className="max-w-4xl w-full text-center space-y-6 md:space-y-10 relative z-10"
-        >
-          <div className="mx-auto grid h-16 w-16 place-items-center rounded-2xl border border-sky-200 bg-white/85 text-emerald-600 shadow-[0_0_40px_rgba(14,165,233,0.18)]">
-            <TechIcon name="chip" className="h-9 w-9" />
-          </div>
-
-          <div className="space-y-4">
-            <p className="font-mono text-xs font-bold uppercase tracking-[0.32em] text-sky-700">final.message</p>
-            <h2 className="font-serif text-4xl md:text-6xl text-[#082f49] font-black tracking-wide">
-              Lời Cảm Ơn
-            </h2>
-            <div className="h-px w-24 bg-emerald-500/50 mx-auto" />
-          </div>
-
-          <div className="rounded-3xl border border-sky-200 bg-white/84 p-5 shadow-2xl shadow-sky-900/10 backdrop-blur-md md:p-8">
-            <p className="text-base md:text-xl leading-relaxed md:leading-loose text-slate-700 font-light italic transition-all">
-              &quot;Cảm ơn bạn đã đồng hành, tin tưởng và góp mặt trong cột mốc này.
-              Sự hiện diện của bạn làm ngày tốt nghiệp trở nên trọn vẹn hơn.&quot;
-            </p>
-          </div>
-
-          <div className="pt-2 md:pt-6">
-            <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-              className="mb-4 font-mono text-[10px] md:text-xs uppercase tracking-[0.5em] text-emerald-700 font-bold"
-            >
-              Trân Trọng
-            </motion.p>
-            <p className="text-3xl md:text-5xl font-serif text-[#082f49] tracking-tight">
-              Tuấn Anh & Gia Đình
-            </p>
-          </div>
-        </motion.div>
-      </section>
 
       <style jsx global>{`
         @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&display=swap");
