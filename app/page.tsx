@@ -162,7 +162,7 @@ export default function GraduationPage() {
               <TechIcon name="cap" className="h-5 w-5 text-emerald-600" />
               <span className="font-serif text-xl font-bold text-[#075985] md:text-2xl">Nguyễn Ngọc Tuấn Anh</span>
             </div>
-            <div className="mx-auto max-w-2xl space-y-4 px-2">
+            <div className="mx-auto max-w-2xl space-y-4">
               <p className="font-serif text-lg italic text-sky-800 md:text-2xl">
                 Trân trọng kính mời
               </p>
@@ -174,7 +174,7 @@ export default function GraduationPage() {
                 <p>
                   <span className="font-bold text-sky-800"> Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM</span>
                 </p>
-                <div className="my-4 rounded-2xl border border-sky-100 bg-sky-50/85 p-4 font-mono text-left text-[12px] md:text-sm text-slate-700 shadow-inner overflow-x-auto">
+                <div className="my-4 rounded-2xl border border-sky-100 bg-sky-50/85 p-4 font-mono text-left text-[11px] md:text-sm text-slate-700 shadow-inner overflow-x-auto">
                   <p><span className="text-sky-700 font-bold">int</span> <span className="text-emerald-700 font-bold">main</span>() {'{'}</p>
                   <p className="pl-4"><span className="text-sky-700 font-bold">bool</span> is_graduated = <span className="text-sky-700 font-bold">true</span>;</p>
                   <p className="pl-4"><span className="text-sky-700 font-bold">if</span> (is_graduated) {'{'}</p>
