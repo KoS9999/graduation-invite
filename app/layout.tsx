@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Thư mời Lễ Tốt nghiệp 🎓",
     description: "Trân trọng kính mời bạn tham dự Lễ Tốt nghiệp",
-    url: "https://graduation-invitation-nnt.vercel.app/",
+    url: "https://graduation-invitation-nguyen-ngoc-tuan-anh.vercel.app/",
     siteName: "Graduation Invitation",
     images: [
       {

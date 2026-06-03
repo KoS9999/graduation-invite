@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
+import Image from "next/image";
 import FallingDecorations from "./FallingDecorations";
 import { GlobalRipple } from "./Ripple";
 
@@ -293,7 +294,7 @@ export default function GraduationPage() {
 
             <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6">
               <a
-                href="https://www.google.com/maps/search/?api=1&query=10.870500435200315,106.80208212893906"
+                href="https://www.google.com/maps/place/UIT+-+C%E1%BB%95ng+A/@10.8704192,106.79953,17z/data=!3m1!4b1!4m6!3m5!1s0x317527e7e8abb0eb:0xec43e4b99472c18a!8m2!3d10.8704192!4d106.8021049!16s%2Fg%2F11v9m3fm3s?entry=ttu&g_ep=EgoyMDI2MDUzMS4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-full bg-[#082f49] px-4 py-2 font-mono text-[9px] font-bold uppercase tracking-[0.16em] text-white shadow-lg transition-all hover:bg-sky-700 md:px-6 md:py-3 md:text-xs"
@@ -306,6 +307,98 @@ export default function GraduationPage() {
         </motion.div>
       </section>
 
+      {/* Section 3: Tổng hợp (A4 Size) */}
+      {/* <section className="relative min-h-[100dvh] w-full flex items-center justify-center px-3 sm:px-4 md:px-6 py-6 sm:py-10 md:py-12 text-center snap-start overflow-hidden">
+        <TechBackground />
+        <BinaryRail />
+
+        <motion.div
+          variants={sectionVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.1 }}
+          className="relative z-10 w-full overflow-hidden rounded-[2rem] md:rounded-[2.8rem] border border-sky-200/80 bg-white/84 p-4 sm:p-6 shadow-[0_35px_120px_rgba(14,116,144,0.18)] backdrop-blur-xl md:p-8 flex flex-col justify-center mx-auto"
+          style={{ maxWidth: "800px", aspectRatio: "210/297", maxHeight: "70dvh" }}
+        >
+          <div className="absolute left-4 top-4 h-12 w-12 rounded-tl-2xl border-l-2 border-t-2 border-sky-400/60 md:h-16 md:w-16" />
+          <div className="absolute right-4 top-4 h-12 w-12 rounded-tr-2xl border-r-2 border-t-2 border-emerald-400/60 md:h-16 md:w-16" />
+          <div className="absolute bottom-4 left-4 h-12 w-12 rounded-bl-2xl border-b-2 border-l-2 border-emerald-400/60 md:h-16 md:w-16" />
+          <div className="absolute bottom-4 right-4 h-12 w-12 rounded-br-2xl border-b-2 border-r-2 border-sky-400/60 md:h-16 md:w-16" />
+
+          <div className="relative z-20 space-y-3 sm:space-y-4 md:space-y-6 overflow-y-auto no-scrollbar py-2">
+            <div className="flex flex-wrap items-center justify-center gap-1.5 md:gap-2">
+              {["code", "chip", "server", "cloud", "terminal"].map((icon) => (
+                <span key={icon} className="inline-flex items-center gap-1.5 md:gap-2 rounded-full border border-sky-200 bg-sky-50/85 px-2 md:px-3 py-1.5 md:py-2 font-mono text-[8px] md:text-[10px] uppercase tracking-[0.16em] text-sky-700">
+                  <TechIcon name={icon as TechIconName} className="h-3 w-3 md:h-4 md:w-4 text-emerald-600" />
+                  {icon}
+                </span>
+              ))}
+            </div>
+
+            <div className="space-y-2 md:space-y-4">
+              <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-[#082f49]">
+                Lễ Tốt Nghiệp
+              </h1>
+            </div>
+
+            <div className="relative mx-auto w-full max-w-2xl md:max-w-[92%]">
+              <div className="relative mx-auto h-28 w-24 overflow-hidden rounded-2xl  bg-white shadow-xl shadow-sky-900/12 sm:absolute sm:right-1 sm:top-1 sm:mx-0 sm:h-32 sm:w-24 md:right-0 md:top-2 md:h-40 md:w-32 lg:h-48 lg:w-36">
+                <Image
+                  src="/images/me.png"
+                  alt="Anh chan dung"
+                  fill
+                  sizes="(min-width: 1024px) 144px, (min-width: 768px) 128px, 96px"
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="space-y-3 sm:-translate-x-4 sm:space-y-4 sm:pr-28 md:-translate-x-7 md:pr-36 lg:-translate-x-10 lg:pr-44">
+                <div className="mx-auto flex max-w-[70%] items-center justify-center gap-2">
+                  <div className="h-px flex-1 bg-gradient-to-r from-transparent via-sky-300 to-transparent" />
+                  <TechIcon name="cloud" className="h-6 w-6 md:h-8 md:w-8 text-emerald-600" />
+                  <div className="h-px flex-1 bg-gradient-to-r from-transparent via-sky-300 to-transparent" />
+                </div>
+            
+            <div className="mx-auto inline-flex items-center gap-2 md:gap-3 rounded-full border border-sky-200 bg-white/85 px-4 md:px-5 py-1.5 md:py-2 shadow-sm">
+              <TechIcon name="cap" className="h-4 w-4 md:h-5 md:w-5 text-emerald-600" />
+              <span className="font-serif text-lg md:text-xl font-bold text-[#075985] lg:text-2xl">Nguyễn Ngọc Tuấn Anh</span>
+            </div>
+            
+                <div className="mx-auto space-y-2 md:space-y-4 px-2">
+              <p className="font-serif text-base md:text-lg lg:text-2xl italic text-sky-800">
+                Trân trọng kính mời
+              </p>
+
+              <div className="text-[12px] sm:text-[14px] md:text-[16px] leading-[1.6] md:leading-[1.75] text-slate-700">
+                <p>
+                  Bạn đến chung vui trong ngày tốt nghiệp tại
+                </p>
+                <p>
+                  <span className="font-bold text-sky-800"> Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM</span>
+                </p>
+                
+              </div>
+                </div>
+              </div>
+            </div>
+            <div className="my-2 md:my-4 rounded-2xl border border-sky-100 bg-sky-50/85 p-3 md:p-4 font-mono text-left text-[9px] sm:text-[11px] md:text-[13px] text-slate-700 shadow-inner overflow-x-auto">
+                  <p><span className="text-sky-700 font-bold">int</span> <span className="text-emerald-700 font-bold">main</span>() {'{'}</p>
+                  <p className="pl-3 md:pl-4"><span className="text-sky-700 font-bold">bool</span> is_graduated = <span className="text-sky-700 font-bold">true</span>;</p>
+                  <p className="pl-3 md:pl-4"><span className="text-sky-700 font-bold">if</span> (is_graduated) {'{'}</p>
+                  <p className="pl-6 md:pl-8"><span className="text-sky-700">std::cout</span> &lt;&lt; <span className="text-emerald-700">&quot;Ready to celebrate 🎉\\n&quot;</span>;</p>
+                  <p className="pl-6 md:pl-8"><span className="text-sky-700">std::cout</span> &lt;&lt; <span className="text-emerald-700">&quot;Time: 16:00 - Thứ ba, 09/06/2026\\n&quot;</span>;</p>
+                  <p className="pl-6 md:pl-8"><span className="text-sky-700">std::cout</span> &lt;&lt; <span className="text-emerald-700">&quot;Location: UIT - Cổng A\\n&quot;</span>;</p>
+                  <p className="pl-6 md:pl-8"><span className="text-sky-700">std::cout</span> &lt;&lt; <span className="text-emerald-700">&quot;Address: Khu phố 34, P.Linh Xuân, TP.HCM\\n&quot;</span>;</p>
+                  <p className="pl-6 md:pl-8"><span className="text-sky-700">std::cout</span> &lt;&lt; <span className="text-emerald-700">&quot;Contact: 0966 077 968\\n&quot;</span>;</p>
+                  <p className="pl-3 md:pl-4">{'}'}</p>
+                  <p className="pl-3 md:pl-4"><span className="text-sky-700 font-bold">return</span> <span className="text-emerald-700">0</span>;</p>
+                  <p>{'}'}</p>
+                </div>
+
+                <p>Sự hiện diện của bạn là niềm vui lớn trong khoảnh khắc đáng nhớ này.</p>
+          </div>
+        </motion.div>
+      </section> */}
 
       <style jsx global>{`
         @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&display=swap");
